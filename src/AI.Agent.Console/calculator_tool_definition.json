@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "operator": {
+      "type": "string",
+      "description": "Arithmetic operation to perform",
+      "enum": [ "add", "subtract", "multiply", "divide" ]
+    },
+    "first_number": {
+      "type": "number",
+      "description": "First number for the calculation"
+    },
+    "second_number": {
+      "type": "number",
+      "description": "Second number for the calculation"
+    }
+  },
+  "required": [ "operator", "first_number", "second_number" ]
+}
